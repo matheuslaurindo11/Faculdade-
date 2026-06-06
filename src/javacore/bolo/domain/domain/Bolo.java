@@ -31,7 +31,6 @@ public class Bolo {
         System.out.println(this.tipo);
         System.out.println(this.fatias);
         System.out.println("---------------");
-        System.out.println();
 
     }
 

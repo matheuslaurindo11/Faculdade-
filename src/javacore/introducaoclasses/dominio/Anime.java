@@ -6,7 +6,6 @@ public class Anime {
 
     private String genero;
     public int episodios;
-
     private String Estudio;
 
     public Anime(String nome, String tipo, int episodios ,String genero){

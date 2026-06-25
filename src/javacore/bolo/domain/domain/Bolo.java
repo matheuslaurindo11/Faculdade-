@@ -2,23 +2,33 @@ package javacore.bolo.domain.domain;
 
 public class Bolo {
     public String nome;
-    public String tamanho;
-    public String sabor;
+    public String Tamanho;
+    public String Sabor;
     public String recheio;
     public String ingredientes;
 
-    public int [] fatias = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15} ;
+    public int [] fatias;
     public String tipo;
     public int tempo;
+    public Bolo () {
+        for (int fatias: fatias){
+            System.out.println(fatias + "");
+
+        }
 
 
-    public Bolo(String nome, int tempo, String ingredientes, String recheio, String tipo,int fatias) {
+    }
+
+
+
+    public Bolo(String nome, int tempo, String ingredientes, String recheio, String tipo, int fatias) {
         this.nome = nome;
         this.tempo = tempo;
         this.recheio = recheio;
         this.ingredientes = ingredientes;
         this.tipo = tipo;
-        this.fatias =  new int [fatias];
+        this.fatias = new int[3];
+
 
     }
 
@@ -29,9 +39,13 @@ public class Bolo {
         System.out.println(this.ingredientes);
         System.out.println(this.recheio);
         System.out.println(this.tipo);
-        System.out.println(this.fatias);
-        System.out.println("---------------");
+        for (int i = 0; i < fatias.length; i++){
+            fatias[i] = i + 0;
 
+        }
+        for (int fatias: this.fatias){
+            System.out.println(fatias + " FATIAS");
+        }
     }
 
 
